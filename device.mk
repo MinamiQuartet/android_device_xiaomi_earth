@@ -162,6 +162,7 @@ $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayEarth \
     FrameworksResOverlayEarth \
+    Launcher3DeviceOverlay \
     SystemUIOverlayEarth
 
 DEVICE_PACKAGE_OVERLAYS += \
