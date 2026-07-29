@@ -157,13 +157,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.nxp.mifare.xml
 
 # Overlays
+$(call inherit-product, hardware/mediatek/overlay/mssi.mk)
+
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayEarth \
     FrameworksResOverlayEarth \
-    SystemUIOverlayEarth \
-    TelephonyOverlayEarth \
-    TetheringResOverlayEarth \
-    WifiResOverlayEarth
+    SystemUIOverlayEarth
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
@@ -212,6 +211,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.km41.xml
 
+# Platform
+TARGET_BOARD_PLATFORM := mt6768
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
@@ -228,6 +230,9 @@ PRODUCT_PACKAGES += \
 
 # Properties
 include hardware/mediatek/configs/properties/vendor_logtag.mk
+
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
 
 # Rootdir
 PRODUCT_PACKAGES += \

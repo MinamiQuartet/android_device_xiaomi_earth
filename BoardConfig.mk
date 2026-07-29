@@ -127,7 +127,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Platform
 BOARD_HAS_MTK_HARDWARE := true
-TARGET_BOARD_PLATFORM := mt6768
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
@@ -139,9 +138,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6768
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-
-# RIL
-ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
