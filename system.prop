@@ -6,5 +6,11 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Infinity
+ro.infinity.soc=Mediatek Helio G85
+ro.infinity.battery=5000 mAh
+ro.infinity.display=720 × 1650, 60Hz
+ro.infinity.camera=50MP + 0,05MP
+
 # Zygote
 zygote.critical_window.minute=10
