@@ -15,7 +15,8 @@ $(call inherit-product, device/xiaomi/earth/device.mk)
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 INFINITY_MAINTAINER := dreamsolister26
-WITH_GAPPS := true
+WITH_GAPPS := false
+PERF_ANIM_OVERRIDE := true
 
 PRODUCT_NAME := infinity_earth
 PRODUCT_DEVICE := earth
