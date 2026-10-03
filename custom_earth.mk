@@ -15,6 +15,7 @@ $(call inherit-product, device/xiaomi/earth/device.mk)
 $(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 TARGET_INCLUDE_GRAMOPHONE := true
+PERF_ANIM_OVERRIDE := true
 
 PRODUCT_NAME := custom_earth
 PRODUCT_DEVICE := earth
