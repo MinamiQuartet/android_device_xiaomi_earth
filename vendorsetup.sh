@@ -2,7 +2,7 @@ echo "Cloning Stuffs Needed For Earth"
 
 # Other earth stuffs
 git clone https://github.com/MinamiQuartet/vendor_xiaomi_earth.git -b lineage-23.2-ims vendor/xiaomi/earth --depth=1
-git clone https://github.com/MinamiQuartet/android_kernel_xiaomi_earth.git -b lineage-24.0 kernel/xiaomi/earth --depth=1
+git clone https://github.com/MinamiQuartet/android_kernel_xiaomi_earth.git -b lineage-24.0-new kernel/xiaomi/earth --depth=1
 git clone https://github.com/MinamiQuartet/minami-sign.git -b keys vendor/lineage-priv/keys
 
 # Hardware Repos
