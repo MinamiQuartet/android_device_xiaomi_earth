@@ -16,7 +16,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 SURFACE_FLINGER_BOOST := false
 WITH_GMS := false
-TARGET_ENABLE_BLUR := false
+TARGET_ENABLE_BLUR := true
 TARGET_DISABLE_MATLOG := true
 USE_DEFAULT_VULKAN := false
 
