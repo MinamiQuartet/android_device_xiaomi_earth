@@ -660,6 +660,7 @@ vendor/lib64/libDR.so
 vendor/lib64/libmnl.so
 vendor/lib64/librpc.so
 vendor/lib64/libviagpsrpc.so
+vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 
 # IMS (VT - System) - from rothko 16 BP2A.250605.015 OS2.0.215.0.WNNMIXM
 system_ext/bin/vtservice|4a8759f67cc4f238983c57193d88d1cc13956e06
