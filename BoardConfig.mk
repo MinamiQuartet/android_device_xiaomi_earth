@@ -113,7 +113,7 @@ BOARD_USES_METADATA_PARTITION := true
 BOARD_SUPER_PARTITION_GROUPS := mediatek_dynamic_partitions
 BOARD_MEDIATEK_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor product
 BOARD_MEDIATEK_DYNAMIC_PARTITIONS_SIZE := 7510949888 # BOARD_SUPER_PARTITION_SIZE - 4MB
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/lumine/config/BoardConfigReservedSize.mk
 
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -139,7 +139,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # SELinux
-include device/lineage/sepolicy/libion/sepolicy.mk
+include device/lumine/sepolicy/libion/sepolicy.mk
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private

@@ -11,10 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/earth/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common LumineDroid stuff.
+$(call inherit-product, vendor/lumine/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_earth
+LUMINE_MAINTAINER := Makinohara
+LUMINE_MAINTAINER_LINK := https://youtu.be/jT2oC2cec10?si=99607iu5LRP4jf1L
+TARGET_ENABLE_BLUR := false
+
+PRODUCT_NAME := earth
 PRODUCT_DEVICE := earth
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
