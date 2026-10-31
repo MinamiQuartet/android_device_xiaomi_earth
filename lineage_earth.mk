@@ -14,6 +14,7 @@ $(call inherit-product, device/xiaomi/earth/device.mk)
 # Inherit some common Lunaris-AOSP stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+TARGET_ENABLE_FP_OVERRIDE := false
 TARGET_BOOT_ANIMATION_RES := 720
 SURFACE_FLINGER_BOOST := false
 WITH_GMS := false
